@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singla Logistics Pvt Ltd</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #cc0000;
+            padding: 30px 10px;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #cc0000;
+        }
+
+        section {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #cc0000;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .photos img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo">
+    <h1>Singla Logistics Pvt Ltd</h1>
+    <p>Fast • Safe • Reliable Transport Service</p>
+</header>
+
+<section>
+    <h2>Our Vehicles</h2>
+    <img src="bolero.jpg" alt="Bolero">
+    <img src="truck.jpg" alt="Truck">
+</section>
+
+<section>
+    <h2>Booking Form</h2>
+
+    <form action="https://formsubmit.co/pksingla1979@gmail.com" method="POST">
+
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        
+        <label>Name</label>
+        <input type="text" name="Customer Name" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="Phone" required>
+
+        <label>Pickup Location</label>
+        <input type="text" name="Pickup Location" required>
+
+        <label>Drop Location</label>
+        <input type="text" name="Drop Location" required>
+
+        <label>Select Vehicle</label>
+        <select name="Vehicle">
+            <option>Bolero</option>
+            <option>Pickup</option>
+            <option>Truck</option>
+        </select>
+
+        <label>Goods Description</label>
+        <textarea name="Goods Details" rows="3"></textarea>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+    <!-- WhatsApp send message button -->
+    <a class="whatsapp-btn"
+       href="#"
+       onclick="
+           let name = document.querySelector('input[name=`Customer Name`]').value;
+           let phone = document.querySelector('input[name=`Phone`]').value;
+           let pickup = document.querySelector('input[name=`Pickup Location`]').value;
+           let drop = document.querySelector('input[name=`Drop Location`]').value;
+           let goods = document.querySelector('textarea[name=`Goods Details`]').value;
+           let vehicle = document.querySelector('select[name=`Vehicle`]').value;
+
+           let msg = `Booking Request:%0AName: ${name}%0APhone: ${phone}%0APickup: ${pickup}%0ADrop: ${drop}%0AGoods: ${goods}%0AVehicle: ${vehicle}`;
+
+           window.open(`https://wa.me/919212064912?text=${msg}`);
+       ">
+        Send on WhatsApp
+    </a>
+
+</section>
+
+<section>
+    <h2>Contact Details</h2>
+    <p><b>Owner:</b> Pradeep Singla</p>
+    <p><b>Address:</b> G-18/25, G Block, Sector-15, Rohini, New Delhi</p>
+    <p><b>Phone:</b> 9212064912</p>
+</section>
+
+</body>
+</html>
