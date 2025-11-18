@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singla Logistics Pvt Ltd</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #cc0000;
+            padding: 30px 10px;
+            text-align: center;
+            color: white;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #cc0000;
+        }
+
+        section {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            animation: slideUp 0.7s ease;
+        }
+
+        .photos img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            margin: 15px auto;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            animation: zoomIn 0.7s ease;
+        }
+
+        ul li {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px 18px;
+            border-radius: 50%;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Animations */
+        @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+        @keyframes slideUp { from {transform: translateY(20px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+        @keyframes zoomIn { from {transform: scale(0.8); opacity: 0;} to {transform: scale(1); opacity: 1;} }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- Logo (upload logo.png later) -->
+    <img src="logo.png" alt="Company Logo">
+    <h1>Singla Logistics Pvt Ltd</h1>
+    <p>A Complete All-India Logistics Solution</p>
+</header>
+
+<section>
+    <h2>Our Transport Services</h2>
+    <ul>
+        <li>All India Transport Service</li>
+        <li>Bolero Delivery Service</li>
+        <li>Open & Closed Truck Service</li>
+        <li>Daily Parcel Service</li>
+        <li>Fast & Safe Delivery</li>
+    </ul>
+</section>
+
+<section class="photos">
+    <h2>Our Vehicles</h2>
+
+    <!-- Upload these images in your repo -->
+    <img src="bolero.jpg" alt="Bolero Vehicle">
+    <img src="truck.jpg" alt="Transport Truck">
+</section>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        Singla Logistics Pvt Ltd is one of the most trusted logistics companies in New Delhi.
+        We provide fast, secure and affordable transport services across India with a strong fleet of
+        Bolero vehicles, trucks, and parcel delivery systems.
+    </p>
+</section>
+
+<section>
+    <h2>Contact & Address</h2>
+    <p><b>Company:</b> Singla Logistics Pvt Ltd</p>
+    <p><b>Owner:</b> Pradeep Singla</p>
+    <p><b>Address:</b> G-18/25, G Block, Sector-15, Rohini, New Delhi</p>
+    <p><b>Phone:</b> 9212064912</p>
+</section>
+
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/919212064912" class="whatsapp-btn">💬</a>
+
+</body>
+</html>
